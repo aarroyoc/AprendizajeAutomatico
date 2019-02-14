@@ -1,0 +1,23 @@
+@relation RiesgoCrediticio
+
+@attribute Riesgo {alto,moderado,bajo}
+@attribute Historia {mala,desconocida,buena}
+@attribute Deuda {alta,baja}
+@attribute Avales {no,adecuados}
+@attribute Ingresos {'0 a 2M','2 a 5M','más de 5M'}
+
+@data
+alto,mala,alta,no,'0 a 2M'
+alto,desconocida,alta,no,'2 a 5M'
+moderado,desconocida,baja,no,'2 a 5M'
+alto,desconocida,baja,no,'0 a 2M'
+bajo,desconocida,baja,no,'más de 5M'
+bajo,desconocida,baja,adecuados,'más de 5M'
+alto,mala,baja,no,'0 a 2M'
+moderado,mala,baja,adecuados,'más de 5M'
+bajo,buena,baja,no,'más de 5M'
+bajo,buena,alta,adecuados,'más de 5M'
+alto,buena,alta,no,'0 a 2M'
+moderado,buena,alta,no,'2 a 5M'
+bajo,buena,alta,no,'más de 5M'
+alto,mala,alta,no,'2 a 5M'
